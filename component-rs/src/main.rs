@@ -5,8 +5,7 @@ use core::panic::PanicInfo;
 
 #[link(name = "../component")]
 extern "C" {
-    #[allow(dead_code)] // not finished
-    fn i2c_simple_isr();
+    pub fn i2c_simple_isr();
 }
 
 #[panic_handler]

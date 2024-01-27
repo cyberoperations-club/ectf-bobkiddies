@@ -5,8 +5,7 @@ use core::panic::PanicInfo;
 
 #[link(name = "../application_processor")]
 extern "C" {
-    #[allow(dead_code)] // not finished
-    fn i2c_simple_controller_init();
+    pub fn i2c_simple_controller_init();
 }
 
 #[panic_handler]
