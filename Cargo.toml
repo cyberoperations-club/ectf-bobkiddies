@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "application-processor-rs",
+    "component-rs",
+]
